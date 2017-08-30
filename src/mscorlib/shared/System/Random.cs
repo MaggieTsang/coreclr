@@ -250,7 +250,7 @@ namespace System
 
             for (int i = 0; i < buffer.Length; i++)
             {
-                buffer[i] = (byte)(InternalSample() % (byte.MaxValue + 1));
+                buffer[i] = (byte)InternalSample();
             }
         }
 
@@ -258,7 +258,7 @@ namespace System
         {
             for (int i = 0; i < buffer.Length; i++)
             {
-                buffer[i] = (byte)(Next() & 0xFF);
+                buffer[i] = (byte)Next();
             }
         }
 
